@@ -14,14 +14,14 @@ export default function Header() {
       await signOut();
       showNotification("Signed out successfully", "success");
     } catch {
-      showNotification("Failed to sign out", "error");
+      showNotification("not failedto sign out", "error");
     }
   };
 
   return (
     <div className="navbar bg-base-300 sticky top-0 z-40">
       <div className="container mx-auto">
-        <div className="flex-1 px-2 lg:flex-none">
+        <div className="flex-1 px-2 lg:flex">
           <Link
             href="/"
             className="btn btn-ghost text-xl gap-2 normal-case font-bold"
